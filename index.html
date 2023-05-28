@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "zari.css" >
+    <link rel = "icon" href = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/navbar-logo-img.png" > 
+    <title>Zari marks count </title>
+</head>
+
+<body>
+    <!-- <english text></english> -->
+    <div class="head-cont mb-0 ">
+        <h3 class="text-center">Zari Marks Calculation</h3>
+        <div class=" d-flex flex-row justify-content-end">
+
+            <img src = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/navbar-logo-img.png" class = "logo" />
+        </div>
+    </div>
+    <center class=" p-5 bg-cont ">
+        <div class="container ">
+            <div class="row">
+                <div class="jari-type-cont col-xs-12 col-sm-12 col-md-6 mb-4">
+                    <label for="jariType" class="label-jari">Zari Type</label><br>
+                    <select id="jariType" class="jari-type">
+                        <option value="select">Select Zari type</option>
+                        <option value="flora">Flora</option>
+                        <option value="tested">Tested</option>
+                        <option value="german">German</option>
+                    </select>
+                    <p id="jariErr" class="err-msg"></p>
+                </div>
+
+                <div class="pogulu-container col-xs-12 col-sm-12 col-md-6 mb-4">
+                    <label for="pogulu" class="label-jari">Pogulu / Gintalu</label> <br>
+                    <input type="text" id="poguluInput" class="pogu-input" placeholder="Enter pogulu / gintalu" /><br>
+                    <p id="error" class="err-msg"></p>
+                </div>
+
+                <div class="jari-type-cont  col-xs-12 col-sm-12 col-md-6 mb-4">
+                    <label for="bellCountId" class="label-jari">Bells</label><br>
+                    <select id="bellCountId" class="bells jari-type">
+                        <option value="bellsnum">select no of bells</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <p id="bellErr" class="err-msg"></p>
+                </div>
+
+                <div class="jari-type-cont    col-xs-12 col-sm-12 col-md-6 mb-4">
+                    <label for="livillu" class="label-jari">For Tested or German</label><br>
+                    <select id="livillu" class="jari-type">
+                        <option value="selectLivi">Select Livils</option>
+                        <option value="18">18</option>
+                        <option value="18.5">18.5</option>
+                        <option value="19">19</option>
+                        <option value="18">18 - German/Tested</option>
+                        <option value="19">19 - German/Tested</option>
+                    </select>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 mb-4">
+                    <div class="text-center" id="submitBtn">
+                        <button type="button" class="ripple-btn custom-outline-button" id="createblog">Submit</button>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-4 "> </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 ">
+                    <p class="text-center">Your answer will display here</p>
+                    <div class="res-cont">
+                        <p>Numbers of Marks : <span id="spanMarks"> </span></p>
+                        <p>Number of billalu : <span id="spanBillalu"> </span> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <script src = "zari.js"></script>
+</body>
+
+</html>
+
