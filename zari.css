@@ -119,3 +119,8 @@
     color: #b0321a;
     font-size: 18px;
 }
+.head-last {
+    background-color: #525232;
+    padding: 5px;
+    color: white;
+}
